@@ -5,3 +5,4 @@ server:
 TEST:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+myww=myww version 2
