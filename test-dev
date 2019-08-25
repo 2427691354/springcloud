@@ -1,8 +1,0 @@
-
-server:
-  port: 8701
-  
-TEST:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-myww=myww version 2
