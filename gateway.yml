@@ -12,8 +12,3 @@ management:
 feign:
   hystrix:
     enabled: true # 开启Feign熔断
-  client:
-    config:
-      default:
-        connectTimeout: 3000
-        readTimeout: 3000
