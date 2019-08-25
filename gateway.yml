@@ -5,6 +5,8 @@ zuul:
     MyTest:
       path: /myTest/**
       serverId: test
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["routes"]
