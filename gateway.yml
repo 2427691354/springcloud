@@ -11,4 +11,4 @@ management:
 
 feign:
   hystrix:
-    enabled: true # 开启Feign熔断
+    enabled: false # 开启Feign熔断
