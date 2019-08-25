@@ -8,3 +8,6 @@ management:
     web:
       exposure:
         include: ["routes"]
+feign:
+  hystrix:
+    enabled: true # 开启Feign熔断
