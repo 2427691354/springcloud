@@ -1,0 +1,3 @@
+TEST:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
