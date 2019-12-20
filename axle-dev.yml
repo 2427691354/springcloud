@@ -3,19 +3,17 @@ TEST:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 server:
-  port: 8088
+  port: 8620
 
 spring:
   datasource:
-    url:  jdbc:mysql://47.101.141.93:3333/hbds2005-2?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://47.101.141.93:3333/hbds2005-2?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
     username: root
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-  devtools:
-    restart:
-      enabled: false
-      additional-paths: src/main/java
+
+# Mybatis 配置
+mybatis:
+  typeAliasesPackage: com.siit.hotbox.entity
+  mapperLocations: classpath:mappers/*.xml
+
