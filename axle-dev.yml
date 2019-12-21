@@ -17,3 +17,30 @@ mybatis:
   typeAliasesPackage: com.siit.hotbox.entity
   mapperLocations: classpath:mappers/*.xml
 
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true #执行是否启用超时，默认启用true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8000 #命令执行超时时间，默认1000ms
+    #test为服务名，针对某个服务
+    test:
+      execution:
+        timeout:
+          enabled: true #执行是否启用超时，默认启用true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8000 #命令执行超时时间，默认1000ms
+
+feign:
+  hystrix:
+    enabled: true #开启feign的hystrix支持,默认是false
+  client:
+    config:
+      default:
+        connectTimeout: 8000
+        readTimeout: 8000
+
