@@ -1,4 +1,4 @@
-TEST:
+AXLE:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
